@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{81ECC4AE-8747-4013-A90C-057F65F5C877}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7F002BE7-7471-49E0-8ED7-A95B4A5AEC8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{73D87344-7A2E-457B-BF38-1340C2824204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F535AF28-025E-49F5-8322-CEA674B4A5AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{50EF2214-274F-4B24-8D3F-E8179823FB6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Domain", "src\MediCore.Domain\MediCore.Domain.csproj", "{5815C1C7-F77B-48DF-B742-F7EB79FD8051}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Infrastructure", "src\MediCore.Infrastructure\MediCore.Infrastructure.csproj", "{34638B75-72B8-4522-8647-686A427E7786}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Persistence", "src\MediCore.Persistence\MediCore.Persistence.csproj", "{0B821156-9FA9-4096-9ACE-E2793713CFB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Application.Dtos", "src\MediCore.Application.Dtos\MediCore.Application.Dtos.csproj", "{DD737B57-8AC2-48A4-BC19-F3DB23F223AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Application.Interface", "src\MediCore.Application.Interface\MediCore.Application.Interface.csproj", "{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Application.UseCase", "src\MediCore.Application.UseCase\MediCore.Application.UseCase.csproj", "{0A560245-2AA2-48EA-983A-E6A8132F081E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Api", "src\MediCore.Api\MediCore.Api.csproj", "{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediCore.Utilities", "src\MediCore.Utilities\MediCore.Utilities.csproj", "{FF10A548-4D0B-4A7A-929E-1D4DC9050422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5815C1C7-F77B-48DF-B742-F7EB79FD8051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5815C1C7-F77B-48DF-B742-F7EB79FD8051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5815C1C7-F77B-48DF-B742-F7EB79FD8051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5815C1C7-F77B-48DF-B742-F7EB79FD8051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34638B75-72B8-4522-8647-686A427E7786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34638B75-72B8-4522-8647-686A427E7786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34638B75-72B8-4522-8647-686A427E7786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34638B75-72B8-4522-8647-686A427E7786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B821156-9FA9-4096-9ACE-E2793713CFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B821156-9FA9-4096-9ACE-E2793713CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B821156-9FA9-4096-9ACE-E2793713CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B821156-9FA9-4096-9ACE-E2793713CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD737B57-8AC2-48A4-BC19-F3DB23F223AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD737B57-8AC2-48A4-BC19-F3DB23F223AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD737B57-8AC2-48A4-BC19-F3DB23F223AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD737B57-8AC2-48A4-BC19-F3DB23F223AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A560245-2AA2-48EA-983A-E6A8132F081E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A560245-2AA2-48EA-983A-E6A8132F081E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A560245-2AA2-48EA-983A-E6A8132F081E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A560245-2AA2-48EA-983A-E6A8132F081E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF10A548-4D0B-4A7A-929E-1D4DC9050422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF10A548-4D0B-4A7A-929E-1D4DC9050422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF10A548-4D0B-4A7A-929E-1D4DC9050422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF10A548-4D0B-4A7A-929E-1D4DC9050422}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5815C1C7-F77B-48DF-B742-F7EB79FD8051} = {7F002BE7-7471-49E0-8ED7-A95B4A5AEC8B}
+		{34638B75-72B8-4522-8647-686A427E7786} = {73D87344-7A2E-457B-BF38-1340C2824204}
+		{0B821156-9FA9-4096-9ACE-E2793713CFB9} = {73D87344-7A2E-457B-BF38-1340C2824204}
+		{DD737B57-8AC2-48A4-BC19-F3DB23F223AA} = {81ECC4AE-8747-4013-A90C-057F65F5C877}
+		{32B33BCF-42ED-40A6-A7C4-EB82FEC91BC3} = {81ECC4AE-8747-4013-A90C-057F65F5C877}
+		{0A560245-2AA2-48EA-983A-E6A8132F081E} = {81ECC4AE-8747-4013-A90C-057F65F5C877}
+		{AB9D3A41-A80A-4BD6-B5CC-3DF45AF7456B} = {F535AF28-025E-49F5-8322-CEA674B4A5AB}
+		{FF10A548-4D0B-4A7A-929E-1D4DC9050422} = {50EF2214-274F-4B24-8D3F-E8179823FB6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49D734FD-596F-4F31-AA36-3F1084FE1242}
+	EndGlobalSection
+EndGlobal
