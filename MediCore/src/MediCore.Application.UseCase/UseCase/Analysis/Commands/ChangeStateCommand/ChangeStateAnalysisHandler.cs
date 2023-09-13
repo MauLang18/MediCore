@@ -2,6 +2,8 @@
 using MediatR;
 using MediCore.Application.Interface.Interface;
 using MediCore.Application.UseCase.Commons.Bases;
+using MediCore.Utilities.Constants;
+using MediCore.Utilities.HelperExtensions;
 using Entity = MediCore.Domain.Entities;
 
 namespace MediCore.Application.UseCase.UseCase.Analysis.Commands.ChangeStateCommand
@@ -24,13 +26,13 @@ namespace MediCore.Application.UseCase.UseCase.Analysis.Commands.ChangeStateComm
             try
             {
                 var analysis = _mapper.Map<Entity.Analysis>(request);
-                var parameters = new { analysis.AnalysisId, analysis.State };
-                response.Data = await _unitOfWork.Analysis.ExecAsync("uspAnalysisChangeState", parameters);
+                var parameters = analysis.GetPropertiesWithValues();
+                response.Data = await _unitOfWork.Analysis.ExecAsync(SP.uspAnalysisChangeState, parameters);
 
                 if (response.Data)
                 {
                     response.IsSuccess = true;
-                    response.Message = "Se actualizó el estado correctamente!!!";
+                    response.Message = GlobalMessage.MESSAGE_UPDATE_STATE;
                 }
             }
             catch (Exception ex)

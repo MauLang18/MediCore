@@ -17,6 +17,11 @@
     <ProjectReference Include="..\MediCore.Application.Dtos\MediCore.Application.Dtos.csproj" />
     <ProjectReference Include="..\MediCore.Application.Interface\MediCore.Application.Interface.csproj" />
     <ProjectReference Include="..\MediCore.Domain\MediCore.Domain.csproj" />
+    <ProjectReference Include="..\MediCore.Utilities\MediCore.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCase\Exam\Commands\" />
   </ItemGroup>
 
 </Project>

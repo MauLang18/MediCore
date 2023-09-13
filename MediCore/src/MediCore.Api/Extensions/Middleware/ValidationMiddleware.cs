@@ -1,5 +1,6 @@
 ﻿using MediCore.Application.UseCase.Commons.Bases;
 using MediCore.Application.UseCase.Commons.Exceptions;
+using MediCore.Utilities.Constants;
 using System.Text.Json;
 
 namespace MediCore.Api.Extensions.Middleware
@@ -24,7 +25,7 @@ namespace MediCore.Api.Extensions.Middleware
                 context.Response.ContentType = "application/json";
                 await JsonSerializer.SerializeAsync(context.Response.Body, new BaseResponse<object>
                 {
-                    Message = "Errores de validación",
+                    Message = GlobalMessage.MESSAGE_VALIDATE,
                     Errors = ex.Errors,
                 });
                 

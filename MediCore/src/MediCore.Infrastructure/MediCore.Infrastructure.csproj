@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MediCore.Application.Interface\MediCore.Application.Interface.csproj" />
+    <ProjectReference Include="..\MediCore.Utilities\MediCore.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

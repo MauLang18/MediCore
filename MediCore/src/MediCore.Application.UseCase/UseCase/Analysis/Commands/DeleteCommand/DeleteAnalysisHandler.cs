@@ -2,6 +2,7 @@
 using MediatR;
 using MediCore.Application.Interface.Interface;
 using MediCore.Application.UseCase.Commons.Bases;
+using MediCore.Utilities.Constants;
 using Entity = MediCore.Domain.Entities;
 
 namespace MediCore.Application.UseCase.UseCase.Analysis.Commands.DeleteCommand
@@ -23,12 +24,12 @@ namespace MediCore.Application.UseCase.UseCase.Analysis.Commands.DeleteCommand
 
             try
             {
-                response.Data = await _unitOfWork.Analysis.ExecAsync("uspAnalysisRemove", new { request.AnalysisId });
+                response.Data = await _unitOfWork.Analysis.ExecAsync(SP.uspAnalysisRemove, request);
 
                 if (response.Data)
                 {
                     response.IsSuccess = true;
-                    response.Message = "Eliminación Exitosa!!!";
+                    response.Message = GlobalMessage.MESSAGE_DELETE;
                 }
             }
             catch (Exception ex)

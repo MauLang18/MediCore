@@ -4,6 +4,7 @@ using MediCore.Application.Dtos.Analysis.Response;
 using MediCore.Application.Interface.Interface;
 using MediCore.Application.UseCase.Commons.Bases;
 using MediCore.Domain.Entities;
+using MediCore.Utilities.Constants;
 
 namespace MediCore.Application.UseCase.UseCase.Analysis.Queries.GetAllQuery
 {
@@ -24,13 +25,13 @@ namespace MediCore.Application.UseCase.UseCase.Analysis.Queries.GetAllQuery
 
             try
             {
-                var analysis = await _unitOfWork.Analysis.GetAllAsync("uspAnalysisList");
+                var analysis = await _unitOfWork.Analysis.GetAllAsync(SP.uspAnalysisList);
 
                 if(analysis is not null)
                 {
                     response.IsSuccess = true;
                     response.Data = _mapper.Map<IEnumerable<GetAllAnalysisResponseDto>>(analysis);
-                    response.Message = "Consulta Exitosa!!!";
+                    response.Message = GlobalMessage.MESSAGE_QUERY;
                 }
             }
             catch (Exception ex)
